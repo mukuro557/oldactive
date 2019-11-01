@@ -28,33 +28,36 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#"><img src="img/logo.png"></a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">หน้าหลัก</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ข้อมูลผู้สูงอายุ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">คิวอาร์โค้ด</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">กิจกรรม</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ออกจากระบบ</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+            <a class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าหลัก <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ข้อมูลผู้สูงอายุ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">กิจกรรม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout" href="#">ออกจากระบบ</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
             </div>
         </nav>
         <!-- dropdown -->
@@ -86,7 +89,7 @@
                             <td>วันที่</td>
                             <td>ชื่อกิจกรรม</td>
                             <td>รายละเอียด</td>
-                           
+                            <td>เข้าร่วม</td>
                         </tr>
                         <tr>
                             <td>1/11/2562</td>
@@ -96,23 +99,61 @@
                         </tr>
                         <tr >
                                 <td>1/11/2562</td>
-                                <td id="po1">ปลูกป่า</td>
+                                <td id="po1">วิ่งมาราทอน</td>
                                 <td id="po2">รับผิดชอบโดย นายสุรสัก จำปี ปลูกป่าเพื่อประโยชน์ <a href="#" class="btn btn-outline-primary">ดูเพิ่มเติม</a></td>
                                 <td><button>เข้าร่วม</button></td>
                         </tr>
                         <tr >
                                 <td>1/11/2562</td>
+                            <td id="po1">เดินป่า</td>
+                            <td id="po2">รับผิดชอบโดย นายสุรสัก จำปี ปลูกป่าเพื่อประโยชน์ <a href="#" class="btn btn-outline-primary">ดูเพิ่มเติม</a></td>
+                            <td><button>เข้าร่วม</button></td>
+                            </tr>
+                            <tr >
+                                <td>1/11/2562</td>
                             <td id="po1">ปลูกป่า</td>
+                            <td id="po2">รับผิดชอบโดย นายสุรสัก จำปี ปลูกป่าเพื่อประโยชน์ <a href="#" class="btn btn-outline-primary">ดูเพิ่มเติม</a></td>
+                            <td><button>เข้าร่วม</button></td>
+                            </tr>
+                            <tr >
+                                <td>1/11/2562</td>
+                            <td id="po1"></td>
                             <td id="po2">รับผิดชอบโดย นายสุรสัก จำปี ปลูกป่าเพื่อประโยชน์ <a href="#" class="btn btn-outline-primary">ดูเพิ่มเติม</a></td>
                             <td><button>เข้าร่วม</button></td>
                             </tr>
                     </table>    
                    
-           <!-- <tr><td>1/11/2562</td></tr>
-            <tr>กิจกรรม</tr>
-            <tr>รายละเอียด</tr> -->
-            
         
+            <div class="container-fluid mx-2">
+                <footer  style="background-color: #343a40">
+                        <div class="container-fluid padding">
+                            <div class="row text-center text-light">
+                                <div class="col-md-6">
+                                <hr class="light">
+                                <h5>ฉุกเฉิน</h5>
+                                <hr class="light">
+                                    <p>555-555-5555</p>
+                                  
+                                </div>
+                                
+                                    
+                                
+                                <div class="col-md-6">
+                                    <hr class="light">
+                                    <h5>ติดต่อเรา</h5>
+                                    <hr class="light">
+                                    <p>Office: 02-222-0000</p>
+                                    <p>Address:City, State, 00000</p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </footer>
+        
+        </div>
+        
+           
     </div>
     
 </body>
